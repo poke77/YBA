@@ -1,0 +1,36 @@
+KEY LINK  =   https://up-to-down.net/338487/zai
+
+script below the line , put in autoexec 
+
+________________________________________________________________________
+
+_G.Min = 13 -- min players
+_G.Max = 14  -- max players
+_G.ItemFarm = "Lucky Arrow" -- IF YOU GET THIS ITEM YOU WILL GET NOTIFICATION IN WEBHOOK
+getgenv().Key = "YourKeyHere" -- HERE PUT KEY FROM THE LINK ABOVE 
+getgenv().webhook = "" -- here put your webhook link ( not required , search how to make a webhook if you want )
+getgenv().DiscordID = "" -- YOUR DISCORD PROFILE ID , TURN ON DEV MODE FOR IT ON DISCORD
+getgenv().AutoInvisible  = false; -- if you want invis or not
+-- change to true to collect items you want to farm
+getgenv().Farming = {
+    ["Mysterious Arrow"] = false;
+    ["Rokakaka"] = false; 
+    ["Pure Rokakaka"] = false; 
+    ["Lucky Arrow"] = true; 
+    ["Rib Cage of The Saint's Corpse"] = false; 
+    ["Steel Ball"] = false;
+    ["Zepellin's Headband"] = false; 
+    ["Ancient Scroll"] = false; 
+    ["Quinton's Glove"] = false;
+    ["Stone Mask"] = false; 
+    ["Gold Coin"] = false;
+    ["Diamond"] = false;
+    ["DEO's Diary"] = false;
+    ["Red Candy"] = false;
+    ["Green Candy"] = false;
+    ["Blue Candy"] = false;
+    ["Yellow Candy"] = false;
+    ["Christmas Present"] = true;
+}
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/SupBabe/YBAHOPPER/main/YBAHOP.lua'))()
